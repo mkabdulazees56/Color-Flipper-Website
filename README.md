@@ -1,2 +1,2 @@
-# Color-Flipper-Website
+# Vanilla javascript Projects
 Color Flipper Website
