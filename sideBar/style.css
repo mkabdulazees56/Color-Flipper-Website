@@ -1,0 +1,114 @@
+/*
+=============== 
+Sidebar
+===============
+*/
+.sidebar-toggle {
+    position: fixed;
+    top: 2rem;
+    right: 3rem;
+    font-size: 2rem;
+    background: transparent;
+    border-color: transparent;
+    color: rgb(0,146,71);
+    transition:  all 0.3s linear;
+    cursor: pointer;
+    animation: bounce 2s ease-in-out infinite;
+  }
+  .sidebar-toggle:hover {
+    color: rgb(108, 175, 141);
+  }
+
+  ul{
+    list-style: none;
+  }
+
+  a{
+    text-decoration: none;
+  }
+  @keyframes bounce {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+  }
+  .close-btn {
+    font-size: 1.75rem;
+    background: transparent;
+    border-color: transparent;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    color: rgb(177, 50, 50);
+  }
+  .close-btn:hover {
+    color: rgb(177, 50, 50);
+    transform: rotate(360deg);
+  }
+  .logo {
+    justify-self: center;
+    height: 55px;
+  }
+  
+  .links a {
+    display: block;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    padding: 1rem 1.5rem;
+    color: rgb(0,146,71) ;
+    transition: all 0.3s linear;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .links a:hover {
+    color: rgb(18, 30,69 );
+    padding-left: 0;
+  }
+  .social-icons {
+    justify-self: center;
+    display: flex;
+    padding-bottom: 2rem;
+  }
+  .social-icons a {
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    color:rgb(0,146,71);
+    transition: all 0.3s linear;
+    justify-content: center;
+  }
+  .social-icons a:hover {
+    color: rgb(108, 175, 141);
+  }
+  
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(241, 245, 248);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    row-gap: 1rem;
+    box-shadow: 0 0 2px rgb(0,146,71);
+    transition: all 0.3s linear;
+    transform: translate(-100%);
+  }
+  .show-sidebar {
+    transform: translate(0);
+  }
+  @media screen and (min-width: 676px) {
+    .sidebar {
+      width: 400px;
+    }
+  }
